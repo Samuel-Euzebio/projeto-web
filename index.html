@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech</title>
+  <link rel="stylesheet" href="./dist/css/styles.css">
+  <script src="https://kit.fontawesome.com/dafebf265a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-100">
+  <div class="min-h-screen flex">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed lg:static top-0 left-0 z-50 min-h-screen w-72 bg-[#0D347D] text-white flex flex-col justify-between py-8 px-6 transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
+
+      <div>
+
+        <!-- Logo -->
+        <div class="flex items-center gap-4 mb-16">
+          <img src="./dist/images/logo-icon.png" alt="">
+        </div>
+
+        <!-- Navegação -->
+        <nav>
+          <ul class="space-y-3">
+
+            <li>
+              <a href="#" class="flex items-center gap-4 bg-blue-700 px-5 py-4 rounded-2xl font-medium text-lg">
+                <i class="fa-solid fa-house"></i>
+                <span>Resumo</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-blue-700/30 transition">
+                <i class="fa-regular fa-file-lines"></i>
+                <span>Transações</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-blue-700/30 transition">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Metas</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-blue-700/30 transition">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Investimentos</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-blue-700/30 transition">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span>Planejamento</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-blue-700/30 transition">
+                <i class="fa-solid fa-pen-fancy"></i>
+                <span>Assinaturas</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-blue-700/30 transition">
+                <i class="fa-solid fa-chart-bar"></i>
+                <span>Relatórios</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-blue-700/30 transition">
+                <i class="fa-solid fa-gear"></i>
+                <span>Configurações</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- Usuário -->
+      <div>
+
+        <div class="flex items-center gap-4 mb-16">
+
+          <img src="./dist/images/aside-profile-icon.png" alt="" class="w-14 h-14">
+
+          <div>
+            <h2 class="font-semibold">Olá, Samuel 👋</h2>
+            <a href="#" class="text-sm text-gray-300">
+              Ver perfil
+            </a>
+          </div>
+
+        </div>
+
+        <p class="font-semibold text-center">
+          Precisa de ajuda?
+        </p>
+
+      </div>
+
+    </aside>
+
+    <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40 lg:hidden"></div>
+
+    <!-- Conteúdo -->
+    <main class="flex-1 p-4 md:p-6 lg:p-10">
+
+      <div class="lg:hidden mb-6 flex justify-between items-center">
+        <button id="menuButton" class="text-[#08275F] text-3xl"><i class="fa-solid fa-bars"></i></button>
+        <img src="./dist/images/logo-icon.png" alt="" class="h-10">
+      </div>
+
+      <!-- Header -->
+      <header class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4 mb-10">
+
+        <div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#08275F] mb-2">
+            Olá, Samuel! 👋
+          </h1>
+
+          <p class="text-xl text-gray-600">
+            Aqui está o resumo das suas finanças hoje.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-8">
+
+          <i class="fa-solid fa-bell text-[#08275F] text-3xl"></i>
+
+          <button class="flex items-center gap-3 text-[#08275F] text-xl font-medium">
+            Abril, 2026
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+
+        </div>
+
+      </header>
+
+      <!-- Saldo -->
+      <section
+        class="bg-[#08275F] rounded-3xl shadow-xl text-white p-6 md:p-10 flex justify-between items-center mb-10">
+
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <h2 class="text-base md:text-xl">
+              Saldo disponível
+            </h2>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+          <p class="text-3xl md:text-6xl font-bold">
+            R$ 4.650,00
+          </p>
+        </div>
+
+        <div class="hidden md:flex gap-20">
+
+          <article>
+            <h3 class="text-xl mb-2">
+              Receitas do mês
+            </h3>
+
+            <p class="text-3xl text-green-400">
+              R$ 8.250,00
+            </p>
+          </article>
+
+          <article>
+            <h3 class="text-xl mb-2">
+              Despesas do mês
+            </h3>
+
+            <p class="text-3xl text-red-400">
+              R$ 3.600,00
+            </p>
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- Resumo -->
+      <section class="mb-10">
+
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-3xl font-bold text-[#08275F]">
+            Resumo do mês
+          </h2>
+
+          <a href="#" class="text-[#08275F]">
+            Ver relatório completo
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+
+          <article class="bg-white rounded-3xl shadow-lg p-6">
+            <img src="./dist/images/saldo-icon.png" alt="" class="w-20 h-20">
+            <h3 class="text-gray-600 mt-4">Saldo do mês</h3>
+            <p class="text-3xl font-bold text-[#08275F] mt-2">
+              R$ 4.650,00
+            </p>
+            <small class="text-green-500 text-sm mt-2"> +12% vs mês anterior</small>
+          </article>
+
+          <article class="bg-white rounded-3xl shadow-lg p-6">
+            <img src="./dist/images/total-receita-icon.png" alt="" class="w-20 h-20">
+            <h3 class="text-gray-600 mt-4">Total de receitas</h3>
+            <p class="text-3xl font-bold text-[#08275F] mt-2">
+              R$ 8.250,00
+            </p>
+            <small class="text-green-500 text-sm mt-2"> +8% vs mês anterior</small>
+          </article>
+
+          <article class="bg-white rounded-3xl shadow-lg p-6">
+            <img src="./dist/images/total-despesa-icon.png" alt="" class="w-20 h-20">
+            <h3 class="text-gray-600 mt-4">Total de despesas</h3>
+            <p class="text-3xl font-bold text-[#08275F] mt-2">
+              R$ 3.600,00
+            </p>
+            <small class="text-red-500 text-sm mt-2"> -5% vs mês anterior</small>
+          </article>
+
+          <article class="bg-white rounded-3xl shadow-lg p-6">
+            <img src="./dist/images/economia-icon.png" alt="" class="w-20 h-20">
+            <h3 class="text-gray-600 mt-4">Economia do mês</h3>
+            <p class="text-3xl font-bold text-[#08275F] mt-2">
+              R$ 1.850,00
+            </p>
+            <small class="text-green-500 text-sm mt-2"> +15% vs mês anterior</small>
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- Área Inferior -->
+      <section class="grid grid-cols-1 xl:grid-cols-[2fr_1fr_1fr] gap-6">
+
+        <!-- Gastos -->
+        <article class="bg-white rounded-3xl shadow-lg p-8">
+
+          <h2 class="text-2xl font-semibold text-[#08275F] mb-8">
+            Gastos por categoria
+          </h2>
+
+          <div class="flex items-center justify-center h-72">
+
+            <!-- Gráfico -->
+            <div class="flex flex-col lg:flex-row items-center gap-8">
+
+              <!-- Gráfico -->
+              <div class="relative">
+
+                <div class="w-[140px] h-[140px] md:w-[180px] md:h-[180px] rounded-full" style="
+        background: conic-gradient(
+          #08275F 0% 30%,
+          #1D4AA3 30% 55%,
+          #5E84CB 55% 70%,
+          #93ACD8 70% 80%,
+          #D9D9D9 80% 100%
+        );
+      "></div>
+
+                <!-- Centro -->
+                <div
+                  class="absolute inset-0 m-auto w-[95px] h-[95px] md:w-[120px] md:h-[120px] bg-white rounded-full flex flex-col items-center justify-center">
+                  <span class="text-[10px] md:text-[12px] text-[#08275F]">
+                    Total
+                  </span>
+
+                  <span class="text-[14px] md:text-[18px] font-bold text-[#08275F] leading-none">
+                    R$ 3.600,00
+                  </span>
+                </div>
+
+              </div>
+
+              <!-- Legenda -->
+              <div class="space-y-3 text-[#08275F] w-full">
+
+                <div class="flex items-center gap-3">
+                  <span class="w-4 h-4 rounded bg-[#08275F]"></span>
+                  <span class="w-24 text-sm">Moradia</span>
+                  <span class="w-10 text-sm">30%</span>
+                  <span class="text-sm">R$ 1.080,00</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span class="w-4 h-4 rounded bg-[#1D4AA3]"></span>
+                  <span class="w-24 text-sm">Alimentação</span>
+                  <span class="w-10 text-sm">25%</span>
+                  <span class="text-sm">R$ 900,00</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span class="w-4 h-4 rounded bg-[#5E84CB]"></span>
+                  <span class="w-24 text-sm">Transporte</span>
+                  <span class="w-10 text-sm">15%</span>
+                  <span class="text-sm">R$ 540,00</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span class="w-4 h-4 rounded bg-[#93ACD8]"></span>
+                  <span class="w-24 text-sm">Lazer</span>
+                  <span class="w-10 text-sm">10%</span>
+                  <span class="text-sm">R$ 360,00</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span class="w-4 h-4 rounded bg-[#D9D9D9]"></span>
+                  <span class="w-24 text-sm">Outros</span>
+                  <span class="w-10 text-sm">20%</span>
+                  <span class="text-sm">R$ 720,00</span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Transações -->
+        <article class="bg-white rounded-3xl shadow-lg p-8">
+
+          <h2 class="text-2xl font-semibold text-[#08275F] mb-8">
+            Últimas transações
+          </h2>
+
+          <ul class="space-y-4">
+
+            <li class="flex items-center justify-between gap-3">
+
+              <div class="flex items-center gap-3">
+                <img src="./dist/images/mercado-icon.png" alt="" class="w-10 h-10">
+
+                <div>
+                  <p class="text-[#08275F] text-sm font-medium">
+                    Mercado
+                  </p>
+
+                  <small class="text-gray-500 text-xs">
+                    Hoje
+                  </small>
+                </div>
+              </div>
+
+              <span class="text-red-500 text-xs whitespace-nowrap">
+                -R$ 156,80
+              </span>
+
+            </li>
+
+            <li class="flex items-center justify-between gap-3">
+
+              <div class="flex items-center gap-3">
+                <img src="./dist/images/posto-gasolina-icon.png" alt="" class="w-10 h-10">
+
+                <div>
+                  <p class="text-[#08275F] text-sm font-medium">
+                    Ipiranga
+                  </p>
+
+                  <small class="text-gray-500 text-xs">
+                    Hoje
+                  </small>
+                </div>
+              </div>
+
+              <span class="text-red-500 text-xs whitespace-nowrap">
+                -R$ 120,00
+              </span>
+
+            </li>
+
+            <li class="flex items-center justify-between gap-3">
+
+              <div class="flex items-center gap-3">
+                <img src="./dist/images/salario-icon.png" alt="" class="w-10 h-10">
+
+                <div>
+                  <p class="text-[#08275F] text-sm font-medium">
+                    Salário
+                  </p>
+
+                  <small class="text-gray-500 text-xs">
+                    Hoje
+                  </small>
+                </div>
+              </div>
+
+              <span class="text-green-500 text-xs whitespace-nowrap">
+                +R$ 5.200,00
+              </span>
+
+            </li>
+
+            <li class="flex items-center justify-between gap-3">
+
+              <div class="flex items-center gap-3">
+                <img src="./dist/images/restaurante-icon.png" alt="" class="w-10 h-10">
+
+                <div>
+                  <p class="text-[#08275F] text-sm font-medium">
+                    Restaurante
+                  </p>
+
+                  <small class="text-gray-500 text-xs">
+                    Hoje
+                  </small>
+                </div>
+              </div>
+
+              <span class="text-red-500 text-xs whitespace-nowrap">
+                -R$ 89,90
+              </span>
+
+            </li>
+
+          </ul>
+
+        </article>
+
+        <!-- Lateral -->
+        <div class="grid md:grid-cols-2 xl:grid-cols-1 gap-6">
+
+          <section class="bg-white rounded-3xl shadow-lg p-6">
+
+            <div class="flex justify-between mb-6">
+              <h2 class="font-semibold text-[#08275F]">
+                Metas
+              </h2>
+
+              <a href="#">Ver todas</a>
+            </div>
+
+            <div class="space-y-6">
+
+              <article>
+                <h3 class="font-medium flex gap-3 items-center">
+                  <img src="./dist/images/viagem-icon.png" alt="" class="w-10 h-10">
+                  Viagem dos sonhos
+                </h3>
+                <p class="text-sm text-gray-500">
+                  R$ 3.200,00 / R$ 6.000,00
+                </p>
+                <img src="./dist/images/viagem-bar-icon.png" alt="">
+
+              </article>
+
+              <article>
+                <h3 class="font-medium flex gap-3 items-center">
+                  <img src="./dist/images/casa-icon.png" alt="" class="w-10 h-10">
+                  Entrada do apartamento
+                </h3>
+                <p class="text-sm text-gray-500">
+                  R$ 12.500,00 / R$ 30.000,00
+                </p>
+                <img src="./dist/images/casa-bar-icon.png" alt="">
+
+              </article>
+
+            </div>
+
+          </section>
+
+          <section class="bg-white rounded-3xl shadow-lg p-6">
+
+            <div class="flex justify-between mb-4 items-center">
+
+              <h2 class="font-semibold text-[#08275F] text-sm">
+                Investimentos
+              </h2>
+
+              <a href="#" class="text-xs text-[#08275F]">Ver todos</a>
+
+            </div>
+
+            <div class="flex items-center">
+              <div>
+                <p class="text-gray-500 text-sm">
+                  Patrimônio total
+                </p>
+
+                <p class="text-[20px] font-bold text-[#08275F] mt-2">
+                  R$ 18.650,00
+                </p>
+
+                <small class="text-[12px] text-green-500 mt-2">
+                  +9,3% nos últimos 12 meses
+                </small>
+              </div>
+              <img src="./dist/images/investimentos-icon.png" alt="" class="w-15 h-15">
+            </div>
+          </section>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+</body>
+
+</html>
